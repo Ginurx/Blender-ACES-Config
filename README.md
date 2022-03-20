@@ -30,7 +30,7 @@ This project can be your starting point of ACES workflow in Blender.
   - `aces_luts`
 - Open Blender and check `Color Management` panel in `Render Properties`.
 
-![color_management_aces_srgb](.\docs\images\color_management_aces_srgb.png)
+![color_management_aces_srgb](./docs/images/color_management_aces_srgb.png)
 
 - Done.
 
