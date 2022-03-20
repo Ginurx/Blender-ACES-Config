@@ -52,6 +52,14 @@ The advantage of this method is that you can use Blender without ACES config by 
 
 
 
+#### Method 3 - Set environment variable
+
+Blender uses the [OCIO](https://opencolorio.org/) standard environment variable - `OCIO` -  to read an OCIO configuration. So you can set the `OCIO` environment variable to the path of your configuration.
+
+**But this is a highly discouraged method.** It can mess up other software which uses OCIO as color management backend. Blender should provide an alternative environment variable, for example `BLENDER_OCIO`，to avoid this problem.
+
+
+
 ## Showcase
 
 *Left*: original filmic sRGB display transform (in which scene linear color space uses sRGB color primaries).
@@ -79,6 +87,10 @@ The advantage of this method is that you can use Blender without ACES config by 
 
 ## Related Projects
 
-ACES v1.3 config and LUTs : 
+[ACES v1.3 config and LUTs](https://github.com/Ginurx/OpenColorIO-Configs)
 
-https://github.com/Ginurx/OpenColorIO-Configs
+[Blender](https://www.blender.org/)
+
+[OpenColorIO](https://opencolorio.org/)
+
+[ACES](https://acescentral.com/)
