@@ -105,7 +105,7 @@ displays:
     - !<View> {name: Log, colorspace: Input - ADX - ADX10}
 
   # Blender defaults
-  sRGB:
+  Blender sRGB:
     - !<View> {name: Blender Standard, colorspace: Blender sRGB}
     - !<View> {name: Blender Filmic, colorspace: Blender Filmic sRGB}
     - !<View> {name: Blender Filmic Log, colorspace: Blender Filmic Log}
@@ -113,14 +113,14 @@ displays:
     - !<View> {name: Blender False Color, colorspace: Blender False Color}
 
   # Blender defaults
-  XYZ:
+  Blender XYZ:
     - !<View> {name: Blender Standard, colorspace: Blender XYZ}
     - !<View> {name: Blender DCI, colorspace: Blender dci_xyz}
     - !<View> {name: Blender Raw, colorspace: Blender Linear}
-  None:
+  Blender None:
     - !<View> {name: Standard, colorspace: Blender Linear}
 
-active_displays: [ACES, sRGB, XYZ]
+active_displays: [ACES, Blender sRGB, Blender XYZ, Blender None]
 active_views:
   # Blender:
   - Blender Standard
