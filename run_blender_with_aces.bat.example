@@ -1,0 +1,4 @@
+SET CONFIG_FOLDER=%~dp0
+set OCIO=%CONFIG_FOLDER%config.ocio
+
+start "Blender (ACES workflow)" "C:\Program Files\Blender Foundation\Blender 3.1\blender.exe"
