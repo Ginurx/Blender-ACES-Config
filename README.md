@@ -58,7 +58,7 @@ The advantage of this method is that you can use Blender without ACES config by 
 
 *Right*: ACES workflow filmic sRGB display transform (in which scene linear color space uses [AP1](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System#ACEScg))
 
-![the_cornell_box_rec709_filmic_vs_ap1_filmic](.\docs\images\the_cornell_box_rec709_filmic_vs_ap1_filmic.png)
+![the_cornell_box_rec709_filmic_vs_ap1_filmic](./docs/images/the_cornell_box_rec709_filmic_vs_ap1_filmic.png)
 
 ----
 
@@ -73,7 +73,7 @@ The advantage of this method is that you can use Blender without ACES config by 
 
 
 
-![the_cornell_box_standard_srgb_vs_aces_srgb](.\docs\images\the_cornell_box_standard_srgb_vs_aces_srgb.png)
+![the_cornell_box_standard_srgb_vs_aces_srgb](./docs/images/the_cornell_box_standard_srgb_vs_aces_srgb.png)
 
 
 
