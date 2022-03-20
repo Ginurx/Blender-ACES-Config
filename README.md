@@ -1,3 +1,7 @@
+# ACES Config for Blender
+
+
+
 ## About The Project
 
 This project can be your starting point of ACES workflow in Blender.
@@ -48,3 +52,33 @@ The advantage of this method is that you can use Blender without ACES config by 
 
 
 
+## Showcase
+
+*Left*: original filmic sRGB display transform (in which scene linear color space uses sRGB color primaries).
+
+*Right*: ACES workflow filmic sRGB display transform (in which scene linear color space uses [AP1](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System#ACEScg))
+
+![the_cornell_box_rec709_filmic_vs_ap1_filmic](.\docs\images\the_cornell_box_rec709_filmic_vs_ap1_filmic.png)
+
+----
+
+*Left*: standard sRGB display:
+
+- Blender built-in workflow (in which scene linear uses sRGB color primaries)
+
+*Right*: ACES sRGB display:
+
+- ACES workflow (in which scene linear uses AP1 color primaries)
+- sRGB display ([RRT](https://en.wikipedia.org/wiki/Academy_Color_Encoding_System#System_overview) + sRGB output)
+
+
+
+![the_cornell_box_standard_srgb_vs_aces_srgb](.\docs\images\the_cornell_box_standard_srgb_vs_aces_srgb.png)
+
+
+
+## Related Projects
+
+ACES v1.3 config and LUTs : 
+
+https://github.com/Ginurx/OpenColorIO-Configs
