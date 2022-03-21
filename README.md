@@ -13,6 +13,14 @@ This project can be your starting point of ACES workflow in Blender.
 
 
 
+**IMPORTANT**
+
+Some configurations you can find online also contains Blender default transforms. **But most of them are totally wrong.** 
+
+Since scene linear in Blender's default config is Rec.709+Linear while scene linear in ACES is defined as ACEScg (AP1+Linear), simply copying & pasting won't work as you expect. Additional color transform is required. Otherwise, an sRGB pure red input can be displayed slightly darker with a standard sRGB display transform by which you expect to be the same as the input pure sRGB red.
+
+
+
 ## Getting Started
 
 #### Method 1 - Overwrite color management folder
@@ -82,6 +90,19 @@ Blender uses the [OCIO](https://opencolorio.org/) standard environment variable 
 
 
 ![the_cornell_box_standard_srgb_vs_aces_srgb](./docs/images/the_cornell_box_standard_srgb_vs_aces_srgb.png)
+
+
+
+## Customization
+
+| Entry               | Comment                                                      |
+| ------------------- | ------------------------------------------------------------ |
+| `default_byte`      | Default color space for byte images such as JPEG, PNG, etc. <br>Since sRGB color space prevail, the default value had been set to `Utility - sRGB - Texture`.<br>Change this config entry to your most used source image color space. |
+| `default_float`     | Default color space for HDR image such as EXR, HDR, etc.<br>The default value is `Utility - Linear - sRGB` which means a color space with sRGB primaries and linear encoding (without gamma). |
+| `default_sequencer` | Default color space sequencer is working in.<br>Alpha blending can be quite different with different color space.<br>Pick a color space of which the color primaries either be ACES AP1 or the one in which your contents are to be delivered.<br>This option can be changed in Blender's color management panel per project. |
+| `color_picking`     | This is the most tricky part of the configuration. The RGB color numbers you see in color picker panel are always in scene linear space which is ACEScg in ACES workflow.<br>But a wide gamut color space can't be displayed on a typical sRGB monitor.<br>In order to pick a color by our eyes, a transform had to be introduced, i.e. the `color_picking` role. <br>Typically, this shall match your output transform such as `Output - sRGB`, `Output - P3D65`. <br>The default value is `Utility - sRGB - Texture` which is a "standard" sRGB transform without ACES RRT. This will give you traditional look.<br>Remember, in Blender, the RGB color numbers in color picker are always in scene linear color space. It can be different with what you see. Maybe blender should provide a way to pick color in user specified color space. |
+
+You should leave the other entry entries intact.
 
 
 
