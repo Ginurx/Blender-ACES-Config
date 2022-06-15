@@ -9,7 +9,7 @@ This project can be your starting point of ACES workflow in Blender.
 - [x] Default display mappings from Blender are retained. (e.g.,  standard sRGB, filmic, filmic log)
 - [x] Default *Looks* are also retained.
 - [x] ACES 1.3 ([Release note](https://community.acescentral.com/t/aces-1-3-now-available/3739))
-- [x] Blender 3.1
+- [x] Blender 3.2
 
 
 
@@ -29,7 +29,7 @@ Since scene linear in Blender's default config is Rec.709+Linear while scene lin
 
   It depends on your installation location, for example:
 
-  `C:\Program Files\Blender Foundation\Blender 3.1\3.1\datafiles\colormanagement`
+  `C:\Program Files\Blender Foundation\Blender 3.2\3.2\datafiles\colormanagement`
 
 - Copy these items into Blender's `colormanagement` folder.
   - `config.ocio`
@@ -46,12 +46,12 @@ Since scene linear in Blender's default config is Rec.709+Linear while scene lin
 
 #### Method 2 - Start Blender from a batch file
 
-Here is an Windows batch file example, assuming Blender-ACES-Config has been cloned into `D:\Blender-ACES-Config` and Blender has been installed at `C:\Program Files\Blender Foundation\Blender 3.1\`.
+Here is an Windows batch file example, assuming Blender-ACES-Config has been cloned into `D:\Blender-ACES-Config` and Blender has been installed at `C:\Program Files\Blender Foundation\Blender 3.2\`.
 
 ```
 set OCIO=D:\Blender-ACES-Config\config.ocio
 
-start "Blender (ACES workflow)" "C:\Program Files\Blender Foundation\Blender 3.1\blender.exe"
+start "Blender (ACES workflow)" "C:\Program Files\Blender Foundation\Blender 3.2\blender.exe"
 ```
 
 Copy the script to a text file, edit the paths according to your situation and save the text file with `.bat` extension. Then run Blender using the batch file.
