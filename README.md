@@ -9,7 +9,7 @@ This project can be your starting point of ACES workflow in Blender.
 - [x] Default display mappings from Blender are retained. (e.g.,  standard sRGB, filmic, filmic log)
 - [x] Default *Looks* are also retained.
 - [x] ACES 1.3 ([Release note](https://community.acescentral.com/t/aces-1-3-now-available/3739))
-- [x] Blender 3.2
+- [x] Blender 3.3
 
 
 
