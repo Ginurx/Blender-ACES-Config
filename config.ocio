@@ -245,7 +245,7 @@ colorspaces:
     equalitygroup: ""
     bitdepth: 32f
     description: |
-      Standard RGB Display Space
+      sRGB display space
     isdata: false
     to_reference: !<GroupTransform>
       children:
@@ -283,7 +283,7 @@ colorspaces:
     equalitygroup: ""
     bitdepth: 32f
     description: |
-      Filmic sRGB view transform
+      sRGB display space with Filmic view transform
     isdata: false
     from_reference: !<GroupTransform>
       children:
